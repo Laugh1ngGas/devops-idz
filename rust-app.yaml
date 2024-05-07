@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rust-app-pod
+spec:
+  containers:
+    - name: rust-project
+      image: rust-project:latest
