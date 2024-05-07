@@ -10,8 +10,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN cargo build --release --bin example1
-# RUN cargo build --bin example1
+# RUN cargo build --release --bin example1
+RUN cargo build --bin example1
 
-CMD ["./target/release/example1"]
-# CMD ["./target/debug/example1"]
+# CMD ["./target/release/example1"]
+CMD ["./target/debug/example1"]
